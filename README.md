@@ -118,6 +118,20 @@ console.log( out );
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/buffer/to-json`][@stdlib/buffer/to-json]: return a JSON representation of a Buffer.
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
@@ -175,9 +189,13 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/buffer-reviver/main/LICENSE
 
+[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor
+
+<!-- <related-links> -->
+
 [@stdlib/buffer/to-json]: https://github.com/stdlib-js/buffer-to-json
 
-[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor
+<!-- </related-links> -->
 
 </section>
 
