@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/buffer-reviver",
-  "version": "0.0.7",
+  "version": "0.0.0",
   "description": "Revive a JSON-serialized Buffer.",
   "license": "Apache-2.0",
   "author": {
