@@ -1,0 +1,41 @@
+{
+  "name": "@stdlib/buffer-reviver",
+  "version": "0.0.0",
+  "description": "Revive a JSON-serialized Buffer.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/buffer-reviver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "utils",
+    "util",
+    "utilities",
+    "utility",
+    "buffer",
+    "buf",
+    "binary",
+    "json",
+    "reviver",
+    "revive",
+    "unmarshal",
+    "deserialize",
+    "from",
+    "convert",
+    "parse",
+    "object",
+    "obj"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
