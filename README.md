@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Reviver
+# reviveBuffer
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
@@ -57,10 +57,10 @@ The [branches.md][branches-url] file summarizes the available branches and displ
 ## Usage
 
 ```javascript
-var reviver = require( '@stdlib/buffer-reviver' );
+var reviveBuffer = require( '@stdlib/buffer-reviver' );
 ```
 
-#### reviver( key, value )
+#### reviveBuffer( key, value )
 
 Revives a JSON-serialized [`Buffer`][@stdlib/buffer/ctor].
 
@@ -69,11 +69,11 @@ var parseJSON = require( '@stdlib/utils-parse-json' );
 
 var str = '{"type":"Buffer","data":[5,3]}';
 
-var buf = parseJSON( str, reviver );
+var buf = parseJSON( str, reviveBuffer );
 // returns <Buffer>[ 5, 3 ]
 ```
 
-For details on the JSON serialization format, see [`toJSON()`][@stdlib/buffer/to-json].
+For details on the JSON serialization format, see [`@stdlib/buffer/to-json`][@stdlib/buffer/to-json].
 
 </section>
 
@@ -98,15 +98,15 @@ For details on the JSON serialization format, see [`toJSON()`][@stdlib/buffer/to
 ```javascript
 var array2buffer = require( '@stdlib/buffer-from-array' );
 var parseJSON = require( '@stdlib/utils-parse-json' );
-var toJSON = require( '@stdlib/buffer-to-json' );
-var reviver = require( '@stdlib/buffer-reviver' );
+var buffer2json = require( '@stdlib/buffer-to-json' );
+var reviveBuffer = require( '@stdlib/buffer-reviver' );
 
 var buf = array2buffer( [ 1, 2 ] );
-var str = JSON.stringify( toJSON( buf ) );
+var str = JSON.stringify( buffer2json( buf ) );
 console.log( str );
 // => '{"type":"Buffer","data":[1,2]}'
 
-var out = parseJSON( str, reviver );
+var out = parseJSON( str, reviveBuffer );
 if ( out instanceof Error ) {
     throw out;
 }
@@ -211,11 +211,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor
 
-<!-- <related-links> -->
-
 [@stdlib/buffer/to-json]: https://github.com/stdlib-js/buffer-to-json
-
-<!-- </related-links> -->
 
 </section>
 
