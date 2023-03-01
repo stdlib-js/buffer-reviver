@@ -73,7 +73,7 @@ var buf = parseJSON( str, reviveBuffer );
 // returns <Buffer>[ 5, 3 ]
 ```
 
-For details on the JSON serialization format, see [`@stdlib/buffer/to-json`][@stdlib/buffer/to-json].
+For details on the JSON serialization format, see [`@stdlib/buffer-to-json`][@stdlib/buffer/to-json].
 
 </section>
 
@@ -134,7 +134,7 @@ console.log( out );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/buffer/to-json`][@stdlib/buffer/to-json]</span><span class="delimiter">: </span><span class="description">return a JSON representation of a Buffer.</span>
+-   <span class="package-name">[`@stdlib/buffer-to-json`][@stdlib/buffer/to-json]</span><span class="delimiter">: </span><span class="description">return a JSON representation of a Buffer.</span>
 
 </section>
 
