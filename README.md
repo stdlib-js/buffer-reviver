@@ -45,30 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/buffer-reviver
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var reviveBuffer = require( '@stdlib/buffer-reviver' );
+import reviveBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-reviver@esm/index.mjs';
 ```
 
 #### reviveBuffer( key, value )
@@ -76,7 +60,7 @@ var reviveBuffer = require( '@stdlib/buffer-reviver' );
 Revives a JSON-serialized [`Buffer`][@stdlib/buffer/ctor].
 
 ```javascript
-var parseJSON = require( '@stdlib/utils-parse-json' );
+import parseJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-parse-json@esm/index.mjs';
 
 var str = '{"type":"Buffer","data":[5,3]}';
 
@@ -106,11 +90,16 @@ For details on the JSON serialization format, see [`@stdlib/buffer-to-json`][@st
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var array2buffer = require( '@stdlib/buffer-from-array' );
-var parseJSON = require( '@stdlib/utils-parse-json' );
-var buffer2json = require( '@stdlib/buffer-to-json' );
-var reviveBuffer = require( '@stdlib/buffer-reviver' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import array2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-array@esm/index.mjs';
+import parseJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-parse-json@esm/index.mjs';
+import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@esm/index.mjs';
+import reviveBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-reviver@esm/index.mjs';
 
 var buf = array2buffer( [ 1, 2 ] );
 var str = JSON.stringify( buffer2json( buf ) );
@@ -123,6 +112,10 @@ if ( out instanceof Error ) {
 }
 console.log( out );
 // => <Buffer>[ 1, 2 ]
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -160,7 +153,7 @@ console.log( out );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -220,9 +213,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/buffer-reviver/main/LICENSE
 
-[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor
+[@stdlib/buffer/ctor]: https://github.com/stdlib-js/buffer-ctor/tree/esm
 
-[@stdlib/buffer/to-json]: https://github.com/stdlib-js/buffer-to-json
+[@stdlib/buffer/to-json]: https://github.com/stdlib-js/buffer-to-json/tree/esm
 
 <!-- <related-links> -->
 
