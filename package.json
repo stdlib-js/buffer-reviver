@@ -43,13 +43,13 @@
   "devDependencies": {
     "@stdlib/assert-is-buffer": "^0.2.1",
     "@stdlib/buffer-to-json": "^0.2.1",
-    "@stdlib/random-base-randu": "^0.2.0",
-    "@stdlib/utils-copy": "^0.2.0",
+    "@stdlib/random-base-randu": "^0.2.1",
+    "@stdlib/utils-copy": "^0.2.1",
     "@stdlib/utils-parse-json": "^0.2.1",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.0"
+    "@stdlib/bench-harness": "^0.2.1"
   },
   "engines": {
     "node": ">=0.10.0",
