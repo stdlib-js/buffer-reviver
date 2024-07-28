@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import reviveBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-reviver@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/buffer-reviver/tags). For example,
+
+```javascript
 import reviveBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-reviver@v0.2.2-esm/index.mjs';
 ```
 
@@ -99,7 +104,7 @@ For details on the JSON serialization format, see [`@stdlib/buffer-to-json`][@st
 import array2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-array@esm/index.mjs';
 import parseJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-parse-json@esm/index.mjs';
 import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@esm/index.mjs';
-import reviveBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-reviver@v0.2.2-esm/index.mjs';
+import reviveBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-reviver@esm/index.mjs';
 
 var buf = array2buffer( [ 1, 2 ] );
 var str = JSON.stringify( buffer2json( buf ) );
