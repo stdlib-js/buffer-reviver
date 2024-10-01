@@ -38,7 +38,8 @@
   },
   "dependencies": {
     "@stdlib/assert-is-array": "^0.2.2",
-    "@stdlib/buffer-from-array": "^0.2.2"
+    "@stdlib/buffer-from-array": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/assert-is-buffer": "^0.2.2",
