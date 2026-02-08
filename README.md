@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import reviveBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-reviver@deno/mod.js';
+import reviveBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-reviver@v0.2.3-deno/mod.js';
 ```
 
 #### reviveBuffer( key, value )
@@ -94,7 +94,7 @@ For details on the JSON serialization format, see [`@stdlib/buffer-to-json`][@st
 import array2buffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-from-array@deno/mod.js';
 import parseJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-parse-json@deno/mod.js';
 import buffer2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-to-json@deno/mod.js';
-import reviveBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-reviver@deno/mod.js';
+import reviveBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/buffer-reviver@v0.2.3-deno/mod.js';
 
 var buf = array2buffer( [ 1, 2 ] );
 var str = JSON.stringify( buffer2json( buf ) );
