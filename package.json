@@ -44,6 +44,7 @@
     "@stdlib/assert-is-buffer": "^0.2.3",
     "@stdlib/buffer-to-json": "^0.2.3",
     "@stdlib/random-base-randu": "^0.2.3",
+    "@stdlib/string-format": "^0.2.3",
     "@stdlib/utils-copy": "^0.2.3",
     "@stdlib/utils-parse-json": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
